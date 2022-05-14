@@ -14,7 +14,7 @@ app.use(cors());
 
 conectarDB();
 
-app.use("/api/docentes", require("./routes/index"));
+app.use("/api/", require("./routes/webHook"));
 
 app.listen(app.get("port"), () => {
   console.log(`Server port: ${app.get("port")}`);
